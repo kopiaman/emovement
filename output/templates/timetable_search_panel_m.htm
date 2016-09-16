@@ -1,0 +1,95 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_pos}
+			<a href="#" id="addSearchControl_pos" class="addSearchControl" {$addSearchControl_pos_attrs}>Position</a><br>
+		{END addSearch_pos}
+		{BEGIN addSearch_month}
+			<a href="#" id="addSearchControl_month" class="addSearchControl" {$addSearchControl_month_attrs}>Month</a><br>
+		{END addSearch_month}
+		{BEGIN addSearch_year}
+			<a href="#" id="addSearchControl_year" class="addSearchControl" {$addSearchControl_year_attrs}>Year</a><br>
+		{END addSearch_year}
+		{BEGIN addSearch_staffID}
+			<a href="#" id="addSearchControl_staffID" class="addSearchControl" {$addSearchControl_staffID_attrs}>Staff</a><br>
+		{END addSearch_staffID}
+		{BEGIN addSearch_level}
+			<a href="#" id="addSearchControl_level" class="addSearchControl" {$addSearchControl_level_attrs}>Participation Level</a><br>
+		{END addSearch_level}
+		{BEGIN addSearch_department}
+			<a href="#" id="addSearchControl_department" class="addSearchControl" {$addSearchControl_department_attrs}>Function</a><br>
+		{END addSearch_department}
+		{BEGIN addSearch_subdepartment}
+			<a href="#" id="addSearchControl_subdepartment" class="addSearchControl" {$addSearchControl_subdepartment_attrs}>Sector</a><br>
+		{END addSearch_subdepartment}
+		{BEGIN addSearch_category}
+			<a href="#" id="addSearchControl_category" class="addSearchControl" {$addSearchControl_category_attrs}>Category</a><br>
+		{END addSearch_category}
+		{BEGIN addSearch_title}
+			<a href="#" id="addSearchControl_title" class="addSearchControl" {$addSearchControl_title_attrs}>Title</a><br>
+		{END addSearch_title}
+		{BEGIN addSearch_organizer}
+			<a href="#" id="addSearchControl_organizer" class="addSearchControl" {$addSearchControl_organizer_attrs}>Organizer</a><br>
+		{END addSearch_organizer}
+		{BEGIN addSearch_location}
+			<a href="#" id="addSearchControl_location" class="addSearchControl" {$addSearchControl_location_attrs}>Location</a><br>
+		{END addSearch_location}
+		{BEGIN addSearch_start_time}
+			<a href="#" id="addSearchControl_start_time" class="addSearchControl" {$addSearchControl_start_time_attrs}>Start Time</a><br>
+		{END addSearch_start_time}
+		{BEGIN addSearch_end_time}
+			<a href="#" id="addSearchControl_end_time" class="addSearchControl" {$addSearchControl_end_time_attrs}>End Time</a><br>
+		{END addSearch_end_time}
+		{BEGIN addSearch_date}
+			<a href="#" id="addSearchControl_date" class="addSearchControl" {$addSearchControl_date_attrs}>Date</a><br>
+		{END addSearch_date}
+		{BEGIN addSearch_week}
+			<a href="#" id="addSearchControl_week" class="addSearchControl" {$addSearchControl_week_attrs}>Week</a><br>
+		{END addSearch_week}
+		{BEGIN addSearch_sstatus}
+			<a href="#" id="addSearchControl_sstatus" class="addSearchControl" {$addSearchControl_sstatus_attrs}>Status</a><br>
+		{END addSearch_sstatus}
+		{BEGIN addSearch_endate}
+			<a href="#" id="addSearchControl_endate" class="addSearchControl" {$addSearchControl_endate_attrs}>Endate</a><br>
+		{END addSearch_endate}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

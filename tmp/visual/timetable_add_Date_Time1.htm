@@ -1,0 +1,39 @@
+
+<DIV {$pageattrs}>
+{BEGIN container_1}
+<TABLE class=runner-c cellPadding=0>
+  <TBODY>
+  {BEGIN start_time_tabfieldblock}<TR class="runner-row style1">
+    <TD class="runner-cc runner-cc1">
+      
+      <DIV class="fieldlabel_start_time {$fielddispclass_start_time}">{BEGIN start_time_label}Start Time {END start_time_label}</DIV></TD>
+    <TD class="runner-cc alt">
+      
+      <DIV class="fieldcontrol_start_time {$fielddispclass_start_time}">{$start_time_editcontrol} 
+      </DIV></TD></TR>
+  {END start_time_tabfieldblock}{BEGIN end_time_tabfieldblock}<TR class="runner-row style1">
+    <TD class="runner-cc runner-cc1">
+      
+      <DIV class="fieldlabel_end_time {$fielddispclass_end_time}">{BEGIN end_time_label}End Time {END end_time_label}</DIV></TD>
+    <TD class="runner-cc alt">
+      
+      <DIV class="fieldcontrol_end_time {$fielddispclass_end_time}">{$end_time_editcontrol} 
+  </DIV></TD></TR>
+  {END end_time_tabfieldblock}{BEGIN date_tabfieldblock}<TR class="runner-row style1" style="HEIGHT: 21px">
+    <TD class="runner-cc runner-cc1">
+      
+      <DIV class="fieldlabel_date {$fielddispclass_date}">{BEGIN date_label}Date 
+      {END date_label}</DIV></TD>
+    <TD class="runner-cc alt">
+      
+      <DIV 
+      class="fieldcontrol_date {$fielddispclass_date}">{$date_editcontrol} 
+      </DIV></TD></TR>
+  {END date_tabfieldblock}{BEGIN endate_tabfieldblock}<TR class="runner-row style1">
+    <TD class="runner-cc runner-cc1">
+      
+      <DIV class="fieldlabel_endate {$fielddispclass_endate}">{BEGIN endate_label}Endate {END endate_label}</DIV></TD>
+    <TD class="runner-cc alt">
+      
+      <DIV class="fieldcontrol_endate {$fielddispclass_endate}">{$endate_editcontrol} 
+  </DIV></TD></TR>{END endate_tabfieldblock}</TBODY></TABLE>{END container_1}</DIV>

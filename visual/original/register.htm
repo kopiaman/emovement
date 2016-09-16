@@ -1,0 +1,225 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" >
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" colspan=2><div  class="runner-b-regheader {$brickclass_regheader}">Register</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+{BEGIN message_block}
+<tr  class="runner-row style1 runner-b-message {$brickclass_message}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><div class="runner-message">{$message}</div></td><td class="runner-cr"></td></tr>{END message_block}
+
+
+
+		{BEGIN icno_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_icno {$fielddispclass_icno}">
+				{BEGIN icno_label}Username:{END icno_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_icno {$fielddispclass_icno}">
+				{$icno_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END icno_fieldblock}
+						{BEGIN pass_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_pass {$fielddispclass_pass}">
+				{BEGIN pass_label}Password:{END pass_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_pass {$fielddispclass_pass}">
+				{$pass_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END pass_fieldblock}
+				{BEGIN confirm_block}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1"> 
+			{BEGIN confirm_label}Re-enter password:{END confirm_label}
+		</td>
+		<td class="runner-cc alt">
+			{$confirm_editcontrol1}
+			<div class="error">{$reenter_msg}</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END confirm_block}
+				{BEGIN fullname_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_fullname {$fielddispclass_fullname}">
+				{BEGIN fullname_label}Fullname:{END fullname_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_fullname {$fielddispclass_fullname}">
+				{$fullname_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END fullname_fieldblock}
+						{BEGIN pos_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_pos {$fielddispclass_pos}">
+				{BEGIN pos_label}Position:{END pos_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_pos {$fielddispclass_pos}">
+				{$pos_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END pos_fieldblock}
+						{BEGIN umail_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_umail {$fielddispclass_umail}">
+				{BEGIN umail_label}Email:{END umail_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_umail {$fielddispclass_umail}">
+				{$umail_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END umail_fieldblock}
+						{BEGIN department_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_department {$fielddispclass_department}">
+				{BEGIN department_label}Function:{END department_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_department {$fielddispclass_department}">
+				{$department_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END department_fieldblock}
+						{BEGIN subdepartment_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_subdepartment {$fielddispclass_subdepartment}">
+				{BEGIN subdepartment_label}Sector:{END subdepartment_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_subdepartment {$fielddispclass_subdepartment}">
+				{$subdepartment_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END subdepartment_fieldblock}
+						{BEGIN sstatus_fieldblock}
+		<tr class="runner-row style1 runner-b-regfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_sstatus {$fielddispclass_sstatus}">
+				{BEGIN sstatus_label}Status:{END sstatus_label}
+			</div>
+		</td>
+		<td class="runner-cc alt runner-fixedcell">
+			<div class="fieldcontrol_sstatus {$fielddispclass_sstatus}">
+				{$sstatus_editcontrol}
+			</div>
+		</td>
+		<td class="runner-cr alt"></td></tr>
+		{END sstatus_fieldblock}
+				
+
+
+{BEGIN legend}
+<tr  class="runner-row style3 runner-b-legend {$brickclass_legend}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><span id="required_block{$id}">
+<img src="images/icon_required.gif" alt="bullet"> - Required field
+</span>
+</td><td class="runner-cr"></td></tr>{END legend}
+
+
+
+<tr  class="runner-row style3 runner-b-mesbackto {$brickclass_mesbackto}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><a href="login.php" {$backlink_attrs}>Back to login page</a></td><td class="runner-cr"></td></tr>
+
+
+
+<tr  class="runner-row style2 runner-b-regbuttons {$brickclass_regbuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" colspan=2><span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$submit_attrs}>Submit</a>
+</span>
+
+</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

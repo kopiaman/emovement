@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable cellPadding=0>
+  <TBODY>
+  <TR class=runner-header>
+    <TD class=runner-top colSpan=3>
+      {BEGIN container_fields}
+      <TABLE class="runner-c runner-c-fields" cellPadding=0>
+        <TBODY>
+        <TR class="runner-toprow style2 header">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc colSpan=2>
+            
+            <DIV 
+            class="runner-b-regheader {$brickclass_regheader}">Register</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN registered_block}<TR class="runner-row style3 runner-b-registered {$brickclass_registered}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents" colSpan=2>
+            
+            <DIV align=center><FONT size=5>Your Registration Request is 
+            submitted to </FONT></DIV>
+            <DIV align=center><FONT size=5>system admin for approval. 
+            </FONT></DIV>
+            <DIV align=center><FONT size=5><BR>&nbsp;</DIV></FONT>
+            <DIV align=center><FONT size=5>Please contact system admin for quick 
+            approval.</DIV></FONT>
+            <P align=center><BR><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="login.php" {$loginlink_attrs}>Proceed to 
+            login page</A> </SPAN></P></TD>
+          <TD class=runner-cr></TD></TR>
+        {END registered_block}<TR class="{$cfooterclass_fields}">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_fields}</TD></TR>
+  <TR class=runner-body>
+    <TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer>
+    <TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{$footer} 
+{END body}</BODY></HTML>
